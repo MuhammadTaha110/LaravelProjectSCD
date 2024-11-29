@@ -10,10 +10,11 @@
     <div class="alert alert-success">
         {{ session('success') }}
     </div>
-@endif
+    @endif
 
     <form action="{{ route('tasks.store') }}" method="POST">
         @csrf
+
         <label for="title">Task Title:</label>
         <input type="text" id="title" name="title" required placeholder="Enter task title">
 
@@ -28,6 +29,15 @@
             <option value="low">Low</option>
             <option value="medium">Medium</option>
             <option value="high">High</option>
+        </select>
+
+        <!-- Assign Task Dropdown -->
+        <label for="user_id">Assign Task:</label>
+        <select id="user_id" name="user_id" required>
+            <option value="">Select User</option>
+            @foreach($users as $user)
+                <option value="{{ $user->id }}">{{ $user->name }}</option>
+            @endforeach
         </select>
 
         <button class="submit-btn" type="submit">Add Task</button>

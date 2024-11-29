@@ -7,7 +7,7 @@
         <img src="https://images.freeimages.com/fic/images/icons/772/token_light/256/task_manager.png" alt="Logo" style="width: 60px; height:50px">
     </div>
 
-    <form method="POST" action="{{ route('login') }}" class="mt-4 p-6 max-w-md mx-auto shadow-lg rounded-lg" style="background-color: var(--shadow-color);">
+    <form method="POST" action="{{ route('login') }}" class="mt-4 p-6 max-w-md mx-auto shadow-lg rounded-lg" style="background-color: var(--shadow-color); color:black">
         @csrf
 
         <!-- Email Address -->
@@ -26,8 +26,8 @@
 
         <!-- Remember Me -->
         <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded border-gray-300 text-indigo-600 shadow-sm focus:ring-indigo-500" name="remember">
+            <label for="remember_me" class="inline-flex items-center text-white" >
+                <input id="remember_me" type="checkbox" class="rounded border-gray-300   shadow-sm " name="remember" >
                 <span class="ms-2 text-sm text-white-600">{{ __('Remember me') }}</span>
             </label>
         </div>
@@ -35,7 +35,7 @@
         <!-- Forgot Password and Login Button -->
         <div class="flex items-center justify-between mt-4">
             @if (Route::has('password.request'))
-                <a class="underline text-sm text-white-600 hover:text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
+                <a class="text-sm text-white-600 text-white hover:text-gray-400 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500" href="{{ route('password.request') }}">
                     {{ __('Forgot your password?') }}
                 </a>
             @endif

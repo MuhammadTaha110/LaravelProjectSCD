@@ -27,49 +27,7 @@
         </div>
     </section>
 
- <!-- About Section -->
-
- <h2 class="text-center mb-4 reasons">REASONS TO CHOOSE US!</h2>
-
-
-<section class="about row my-5">
-
-    <div class="col-12 col-md-8 offset-md-2"> <!-- Centering on larger screens -->
-        <div class="row mb-3 align-items-center">
-            <div class="col-auto">
-                <i class="fas fa-check-circle fa-3x text-green"></i> <!-- Large Icon -->
-            </div>
-            <div class="col">
-                <h5 class='about-heading'>Intuitive Task Creation</h5>
-                <p>Easily create and customize your tasks to fit your workflow.</p>
-            </div>
-        </div>
-        <hr> <!-- Separator Line -->
-
-        <div class="row mb-3 align-items-center">
-            <div class="col-auto">
-                <i class="fas fa-bell fa-3x text-warning"></i> <!-- Large Icon -->
-            </div>
-            <div class="col">
-                <h5 class='about-heading'>Deadline Reminders</h5>
-                <p>Stay on top of your deadlines with timely reminders.</p>
-            </div>
-        </div>
-        <hr> <!-- Separator Line -->
-
-        <div class="row mb-3 align-items-center">
-            <div class="col-auto">
-                <i class="fas fa-star fa-3x text-info"></i> <!-- Large Icon -->
-            </div>
-            <div class="col">
-                <h5 class='about-heading'>Priority Tagging</h5>
-                <p>Organize your tasks by priority to focus on what matters most.</p>
-            </div>
-        </div>
-    </div>
-
-</section>
-
+ 
 <!-- Features Section -->
 <section class="features my-5">
     <h2 class="text-center mb-4">Our Features</h2>

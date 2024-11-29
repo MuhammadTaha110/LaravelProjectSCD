@@ -171,6 +171,97 @@ blockquote .blockquote-footer{
     width: 100%;
 }
 
+/*Service*/
+.service-card {
+    height: 250px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+}
+
+.service-card p{
+    width: 90%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Specific Styles for Each Task Type */
+.create {
+    background-color: #c9ebf1;
+    border: 2px solid #0b7787;
+    color: #0b7787;
+}
+.create h4 {
+    color: #0b7787;
+    font-weight: 600;
+}
+.create p {
+    color: #0b7787;
+}
+
+.view {
+    background-color: #f1f1c9;
+    border: 2px solid #85870b;
+}
+.view h4 {
+    color: #85870b;
+    font-weight: 600;
+}
+.view p {
+    color: #85870b;
+}
+
+.update {
+    background-color: #f1d3c9;
+    border: 2px solid #874b0b;
+}
+.update h4 {
+    color: #874b0b;
+    font-weight: 600;
+}
+.update p {
+    color: #874b0b;
+}
+
+.delete {
+    background-color: #f1c9c9;
+    border: 2px solid #870b0b;
+}
+.delete h4 {
+    color: #870b0b;
+    font-weight: 600;
+}
+.delete p {
+    color: #870b0b;
+}
+
+.assign-task {
+    background-color: #c9f1c9;
+    border: 2px solid #15870b;
+}
+.assign-task h4 {
+    color: #15870b;
+    font-weight: 600;
+}
+.assign-task p {
+    color: #15870b;
+}
+
+.track-task {
+    background-color: #e5c9f1;
+    border: 2px solid #870b81;
+}
+.track-task h4, .track-task p, .track-task i {
+    color: #870b81;
+    font-weight: 600;
+}
+
+
+
 /*Manage Your Task Section*/
 
 .top {
@@ -420,6 +511,17 @@ padding-bottom: 40px;
     margin-bottom: 10px;
 }
 
+.task-title{
+    font-weight: bold;
+}
+
+.description{
+    font-weight: normal;
+    width:100%;
+    text-align:left;
+    color:var(--title-color);
+}
+
 
 .task-list-container {
     max-width: 800px;
@@ -559,4 +661,7 @@ main {
         font-size: 15px;
     }
 }
+
+
+
 
